@@ -46,8 +46,7 @@ The project consists of three distinct components running simultaneously:
 
 1.  Clone the repository:
     ```bash
-    git clone [https://github.com/your-username/Project-Tsunami-DDoS-Lab.git](https://github.com/your-username/Project-Tsunami-DDoS-Lab.git)
-    cd Project-Tsunami-DDoS-Lab
+    git clone [https://github.com/Riyazz357/simple-DDoS-Lab.git]
     ```
 
 2.  Install dependencies:
@@ -66,6 +65,12 @@ Start the server that contains the Rate Limiting defense logic.
 ```bash
 python victim.py
 ```
-### Terminal 1: The Victim Server (Blue Team)
+### Terminal 2: The Dashboard (Observer)
 ```bash
 streamlit run dashboard.py
+
+```
+### Terminal 3: The Attacker (Red Team)
+```bash
+python flood_db.py
+```
